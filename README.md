@@ -33,7 +33,8 @@ app creates its table on startup and gives you full create/read/update/delete.
   validated. The endpoints are public (no auth) by default — to require a token,
   see [making an app private](https://dockhold.eu/docs/recipes/deploy-a-full-stack-app#lock-the-api-down-to-your-app).
 
-No build step, so Dockhold runs it directly — no Dockerfile needed.
+Dockhold builds the included [`Dockerfile`](Dockerfile). There's nothing to
+change in it, and it deploys on any plan.
 
 ## Run it locally
 
