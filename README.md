@@ -4,7 +4,7 @@ A small CRUD REST API backed by [Dockhold](https://dockhold.eu)'s managed
 Postgres. Enable the database add-on and Dockhold injects `DATABASE_URL` — the
 app creates its table on startup and gives you full create/read/update/delete.
 
-[![Deploy to Dockhold](https://img.shields.io/badge/Deploy%20to-Dockhold-2563eb?style=for-the-badge)](https://app.dockhold.eu/new?repo=https://github.com/dockhold/postgres-starter)
+[![Deploy on Dockhold](https://dockhold.eu/button.svg)](https://app.dockhold.eu/new?repo=https://github.com/dockhold/postgres-starter&name=postgres-starter&ref=button)
 
 ## Deploy it
 
@@ -13,6 +13,15 @@ app creates its table on startup and gives you full create/read/update/delete.
    and **check "Add a managed database"** so `DATABASE_URL` is injected.
 3. It goes live at `https://<your-app>.dockhold.app`. Data persists across
    restarts and deploys, because it's in Postgres — not the container filesystem.
+
+## Deploy with your AI tool
+
+Install the Dockhold plugin or MCP server in your AI coding tool
+([setup guide](https://dockhold.eu/docs/recipes/deploy-from-your-ai-tool)), then
+say "put this online" in a folder with this template. The tool signs you in
+through the browser once and reports the URL when the app is live.
+
+Or from a terminal: `npx dockhold login`, then `npx dockhold deploy --db` (the `--db` adds the managed database this template needs).
 
 ## API
 
